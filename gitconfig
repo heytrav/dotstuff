@@ -1,0 +1,39 @@
+[user]
+    name = Travis Holton
+    email = travis@catalyst.net.nz
+    signingkey = 3E2CC2D3
+[alias]
+    co = checkout
+    br = branch
+    sb = show-branch --current --color
+    ci = commit -v
+    hist = log  --pretty=format:\"%C(cyan)%h%Creset %Cgreen%ad%Creset | %C(yellow)%s%d%Creset [%C(white)%an%Creset]\" --graph --date=short
+    who = shortlog -s --
+    dump = cat-file -p
+    ri = rebase --interactive
+    smf = submodule foreach git fetch --all
+    heads = log --pretty=format:\"%C(cyan)%h%Creset %C(blue)%d%Creset\" --graph
+    st = status
+    graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+    gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+    new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+    mb  = merge-base HEAD
+    mbi = show-branch --merge-base
+    diverged = "!f() { git hist  HEAD $@ --not $(git mb $@)^; }; f"
+    commontag = "!f() { git describe --tags $(git mb $@); }; f"
+    treetag = "!f() { git hist HEAD $@ --not $(git commontag $@)^; }; f"
+    prune-all = "!git remote | xargs -n 1 git remote prune"
+    stripped-branch = "!f() { git br --column=row $@ ; }; f"
+[color]
+    ui = true
+    showbranch = auto
+[branch]
+    autosetuprebase = always
+[log]
+    decorate = true
+[push]
+    default = upstream
+[pager]
+    show-branch = true
+[init]
+    templatedir = ~/.git_template
