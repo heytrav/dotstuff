@@ -58,7 +58,7 @@ exec git diff-index --check --cached $against --
 #fi
 
 # bail with success if we're in the middle of merging or rebasing
-#if [ -d .git/rebase-merge ]; then
+#if [ -d $GIT_DIR/rebase-merge ]; then
     #exit 0
 #fi
 
