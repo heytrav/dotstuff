@@ -37,3 +37,5 @@
     show-branch = true
 [init]
     templatedir = ~/.git_template
+[github]
+	user = heytrav
