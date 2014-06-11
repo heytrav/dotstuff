@@ -37,5 +37,9 @@
     show-branch = true
 [init]
     templatedir = ~/.git_template
+[gitreview]
+	rebase = false
+[rerere]
+	enabled = true
 [github]
 	user = heytrav
