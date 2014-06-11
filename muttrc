@@ -151,7 +151,6 @@ set mail_check = '30'
 # set pager_format = '-%Z- %C/%m: %-20.20n   %s%*  -- (%P)'
  set pager_index_lines = '6'
 # set pager_stop = no
-#source $HOME/.mutt/gpg.rc
 # set pgp_auto_decode = no
 # set pgp_autoinline = no
 # set pgp_check_exit = yes
@@ -316,6 +315,7 @@ set sidebar_visible = yes
 set sidebar_width = 30
 #set sidebar_shortpath = yes
 
+source $HOME/.mutt/gpg.rc
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
 # Ctrl-n, Ctrl-p to select next, previous folder.
