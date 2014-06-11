@@ -151,7 +151,7 @@ set mail_check = '30'
 # set pager_format = '-%Z- %C/%m: %-20.20n   %s%*  -- (%P)'
  set pager_index_lines = '6'
 # set pager_stop = no
-source $HOME/.mutt/gpg.rc
+#source $HOME/.mutt/gpg.rc
 # set pgp_auto_decode = no
 # set pgp_autoinline = no
 # set pgp_check_exit = yes
@@ -329,6 +329,7 @@ bind index,pager \CU sidebar-open
 folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'
 folder-hook 'ideegeo.com' 'source ~/.mutt/ideegeo.com'
 folder-hook 'goingmyway.co.nz' 'source ~/.mutt/goingmyway.co.nz'
+folder-hook 'catalyst.net.nz' 'source ~/.mutt/catalyst.net.nz'
 source ~/.mutt/gmail.com
 
 macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
