@@ -335,9 +335,10 @@ source ~/.mutt/gmail.com
 macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
 macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/ideegeo.com<enter><change-folder>!<enter>'
 macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/goingmyway.co.nz<enter><change-folder>!<enter>'
+macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/catalyst.net.nz<enter><change-folder>!<enter>'
 
 
 
 # Colors
-source $HOME/workspace/repos/solarized/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
+source $MUTT_COLOR_PATH
 
