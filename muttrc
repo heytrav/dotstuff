@@ -313,7 +313,6 @@ set wrap_headers = '78'
 # set write_inc = '10'
 set sidebar_visible = yes
 set sidebar_width = 30
-#set sidebar_shortpath = yes
 
 source $HOME/.mutt/gpg.rc
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
@@ -329,13 +328,12 @@ bind index,pager \CU sidebar-open
 folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'
 folder-hook 'ideegeo.com' 'source ~/.mutt/ideegeo.com'
 folder-hook 'goingmyway.co.nz' 'source ~/.mutt/goingmyway.co.nz'
-folder-hook 'catalyst.net.nz' 'source ~/.mutt/catalyst.net.nz'
-source ~/.mutt/gmail.com
 
-macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
-macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/ideegeo.com<enter><change-folder>!<enter>'
+source ~/.mutt/ideegeo.com
+
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/ideegeo.com<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
 macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/goingmyway.co.nz<enter><change-folder>!<enter>'
-macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/catalyst.net.nz<enter><change-folder>!<enter>'
 
 
 

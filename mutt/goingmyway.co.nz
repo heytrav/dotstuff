@@ -1,10 +1,13 @@
 set from = 'wtholton@goingmyway.co.nz'
 set folder = "imaps://imap.zoho.com:993"
 set spoolfile = "+INBOX"
+set postponed = "+Drafts"
 set trash = "+Trash"
 set smtp_url = "smtp://smtp.zoho.com:587/"
 set signature = '~/.mutt/signatures/goingmyway.co.nz'
 
 source 'gpg -d $HOME/.mutt/passwords/goingmyway.co.nz.gpg |'
-mailboxes "+-- GoingMyWay -----------"
-mailboxes =INBOX =support/feedback =rides/offers =rides/requests ~/sent ~/postponed
+mailboxes "+== GoingMyWay ==========="
+mailboxes =INBOX =support/feedback 
+mailboxes "+---- site ---------------"
+mailboxes =rides/offers =rides/requests
