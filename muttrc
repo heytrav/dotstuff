@@ -3,7 +3,7 @@
 
 # set abort_nosubject = ask-yes
 # set abort_unmodified = yes
-# set alias_file = '~/.muttrc'
+ set alias_file = '~/.mutt-alias'
 # set alias_format = '%4n %2f %t %-10a   %r'
 # set allow_8bit = yes
 # set allow_ansi = no
@@ -201,7 +201,8 @@ set pgp_sign_as = '0x848BAF5B9BE26639'
 # set print_decode = yes
 # set print_split = no
 # set prompt_after = yes
- set query_command = 'lbdbq %s 2>/dev/null'
+ set query_command = "goobook query '%s'" 
+ #macro index,pager A "<pipe-message>abook --add-email-quiet<return>" "add the sender address to abook"
  #set query_format = '%4c %t %-25.25a %-25.25n %?e?(%e)?'
 # set quit = yes
 # set quote_regexp = '^([ \t]*[|>:}#])+'
@@ -339,4 +340,4 @@ macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/goingmyway.co.nz<e
 
 # Colors
 source $MUTT_COLOR_PATH
-
+auto_view text/html
