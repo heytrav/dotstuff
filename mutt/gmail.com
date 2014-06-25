@@ -11,11 +11,16 @@ set smtp_url = "smtp://wtholton@smtp.gmail.com:587/"
 set signature = '~/.mutt/signatures/gmail.com'
 source 'gpg -d $HOME/.mutt/passwords/gmail.com.gpg |'
 
-mailboxes "+=[ Gmail ]===================" =INBOX  =[Gmail]/All\ Mail =[Google\ Mail]/Important
-mailboxes "+____ Personal _______________" =Friends  =family/oregon =family/texas
-mailboxes "+____ Tech ___________________" =tech/python  =tech/github =tech/cpan =groups/perl/catalyst =groups/perl/dbix
-mailboxes "+____ Finances _______________" =invoice  =finances 
-mailboxes "+____ misc ___________________" =[Google\ Mail]/Drafts
+mailboxes "+=[ Gmail ]==================="
+mailboxes =INBOX  =[Gmail]/All\ Mail =[Google\ Mail]/Important
+mailboxes "+____ Personal _______________"
+mailboxes =Friends  =family/oregon =family/texas
+mailboxes "+____ Tech ___________________"
+mailboxes =tech/python  =tech/github =tech/cpan =groups/perl/catalyst =groups/perl/dbix
+mailboxes "+____ Finances _______________"
+mailboxes =invoice  =finances
+mailboxes "+____ misc ___________________"
+mailboxes =[Google\ Mail]/Drafts
 
 
 macro index \e1 ":set from=wtholton@gmail.com\n:set status_format=\"-%r-wtholton@gmail.com: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---\"\n:set signature = \"~/.mutt/signatures/gmail.com\"\n:set sort = \"reverse-threads\" \n:set sort_alias = \"alias\"\n:set sort_aux = \"last-date-received\"\n" "Switch to wtholton@gmail.com"
