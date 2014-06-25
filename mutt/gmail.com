@@ -17,9 +17,12 @@ mailboxes "+____ Personal _______________"
 mailboxes =Friends  =family/oregon =family/texas
 mailboxes "+____ Tech ___________________"
 mailboxes =tech/python  =tech/github =tech/cpan =groups/perl/catalyst =groups/perl/dbix
+mailboxes "+____ Interest _______________"
+mailboxes =Homebrewing =Mac
 mailboxes "+____ Finances _______________"
 mailboxes =invoice  =finances
 mailboxes "+____ misc ___________________"
+mailboxes =newsletters =groups/OSU =job/auto =job/specific
 mailboxes =[Google\ Mail]/Drafts
 
 
