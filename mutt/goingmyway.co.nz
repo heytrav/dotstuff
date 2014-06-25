@@ -7,7 +7,7 @@ set smtp_url = "smtp://smtp.zoho.com:587/"
 set signature = '~/.mutt/signatures/goingmyway.co.nz'
 
 source 'gpg -d $HOME/.mutt/passwords/goingmyway.co.nz.gpg |'
-mailboxes "+== GoingMyWay ==========="
-mailboxes =INBOX =support/feedback 
-mailboxes "+---- site ---------------"
+mailboxes "+=[ GoingMyWay ]=============="
+mailboxes =INBOX =support/feedback
+mailboxes "+____ site ___________________"
 mailboxes =rides/offers =rides/requests
