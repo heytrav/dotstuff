@@ -40,6 +40,6 @@
 [gitreview]
 	rebase = false
 [rerere]
-	enabled = true
+	enabled = 1
 [github]
 	user = heytrav

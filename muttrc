@@ -335,7 +335,7 @@ source ~/.mutt/ideegeo.com
 macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/ideegeo.com<enter><change-folder>!<enter>'
 macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
 macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/goingmyway.co.nz<enter><change-folder>!<enter>'
-macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/cpan.org<enter><change-folder>!<enter>'
+macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/yahoo.de<enter><change-folder>!<enter>'
 
 
 
