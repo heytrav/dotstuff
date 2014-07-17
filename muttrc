@@ -329,6 +329,7 @@ bind index,pager \CU sidebar-open
 folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'
 folder-hook 'ideegeo.com' 'source ~/.mutt/ideegeo.com'
 folder-hook 'goingmyway.co.nz' 'source ~/.mutt/goingmyway.co.nz'
+folder-hook 'yahoo.de' 'source ~/.mutt/yahoo.de'
 
 source ~/.mutt/ideegeo.com
 

@@ -43,3 +43,5 @@
 	enabled = 1
 [github]
 	user = heytrav
+[diff]
+	tool = vimdiff

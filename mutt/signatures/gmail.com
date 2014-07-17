@@ -1,2 +1,2 @@
 Trav Holton
-wtholton at gmail dot com
+GPG Public Key: 9BE26639

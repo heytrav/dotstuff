@@ -1,2 +1,3 @@
 Trav Holton
-heytrav at cpan dot org
+Perl Developer
+GPG Public Key: 9BE26639
