@@ -21,4 +21,5 @@ mailboxes =raygun/new =raygun/recurring =raygun/digest
 mailboxes "+____ Groups _________________"
 mailboxes =groups/perl/wellingtonpm =groups/python/wellypug =groups/python/nzpug
 mailboxes "+____ Misc ___________________"
+mailboxes =idonethis
 mailboxes =[Gmail]/Drafts
