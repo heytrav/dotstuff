@@ -12,6 +12,7 @@ source 'gpg -d $HOME/.mutt/passwords/ideegeo.com.gpg |'
 
 mailboxes "+=[ ideegeo ]================="
 mailboxes =INBOX =[Gmail]/All\ Mail =[Gmail]/Important
+mailboxes =sysadmins
 mailboxes "+____ IWMN Apps ______________"
 mailboxes =app/base =app/docker =app/domainsage =app/hase =app/issue-voter
 mailboxes =app/blog-skeleton =app/daemonise =app/iwantmyname =app/iwmn-frontend
