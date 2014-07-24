@@ -12,6 +12,7 @@
     dump = cat-file -p
     ri = rebase --interactive
     smf = submodule foreach git fetch --all
+    sfp = submodule foreach git pull
     heads = log --pretty=format:\"%C(cyan)%h%Creset %C(blue)%d%Creset\" --graph
     st = status
     graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
