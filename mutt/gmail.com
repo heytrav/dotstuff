@@ -7,7 +7,7 @@ set spoolfile = "+INBOX"
 set postponed ="+[Google Mail]/Drafts"
 set record = "+[Google Mail]/Sent Mail"
 set trash = "+[Google Mail]/Bin"
-set smtp_url = "smtp://wtholton@smtp.gmail.com:587/"
+set smtp_url = "smtps://wtholton@smtp.gmail.com:465/"
 set signature = '~/.mutt/signatures/gmail.com'
 source 'gpg -d $HOME/.mutt/passwords/gmail.com.gpg |'
 

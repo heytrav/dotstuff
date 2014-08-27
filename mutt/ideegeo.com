@@ -5,7 +5,7 @@ set spoolfile = "+INBOX"
 set record = "+[Gmail]/Sent Mail"
 set postponed ="+[Gmail]/Drafts"
 set trash = "+[Gmail]/Trash"
-set smtp_url = "smtp://travis\@ideegeo.com@smtp.gmail.com:587/"
+set smtp_url = "smtps://travis\@ideegeo.com@smtp.gmail.com:465/"
 set signature = '~/.mutt/signatures/ideegeo.com'
 
 source 'gpg -d $HOME/.mutt/passwords/ideegeo.com.gpg |'
