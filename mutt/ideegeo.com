@@ -14,13 +14,15 @@ mailboxes "+=[ ideegeo ]================="
 mailboxes =INBOX =[Gmail]/All\ Mail =[Gmail]/Important
 mailboxes =sysadmins
 mailboxes "+____ IWMN Apps ______________"
-mailboxes =app/base =app/docker =app/domainsage =app/hase =app/issue-voter
+mailboxes =app/base =app/beanbag =app/docker =app/domainsage =app/hase =app/issue-voter
 mailboxes =app/blog-skeleton =app/daemonise =app/iwantmyname =app/iwmn-frontend
 mailboxes =app/tools =app/nsearch2 =app/hubot =app/search-websockets
+mailboxes =app/nodepp =app/epp-reg
 mailboxes "+____ Monitoring errors ______"
 mailboxes =raygun/new =raygun/recurring =raygun/digest
 mailboxes "+____ Groups _________________"
 mailboxes =groups/perl/wellingtonpm =groups/python/wellypug =groups/python/nzpug
 mailboxes "+____ Misc ___________________"
 mailboxes =idonethis
+mailboxes =rescue-time
 mailboxes =[Gmail]/Drafts

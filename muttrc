@@ -286,7 +286,7 @@ set pgp_sign_as = '0x848BAF5B9BE26639'
  set status_on_top = yes
 # set strict_threads = no
 # set suspend = yes
-# set text_flowed = no
+ set text_flowed = yes
 # set thorough_search = yes
 # set thread_received = no
 # set tilde = no
@@ -314,7 +314,8 @@ set wrap_headers = '78'
 # set write_inc = '10'
 set sidebar_visible = yes
 set sidebar_width = 30
-
+#set sidebar_newmail_only=yes
+color sidebar_new cyan default
 source $HOME/.mutt/gpg.rc
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
