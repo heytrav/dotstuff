@@ -1,11 +1,14 @@
 set from = 'wtravisholton@yahoo.de'
 set folder = "imaps://imap.mail.yahoo.com:993"
+set use_from
 set spoolfile = "+INBOX"
 set postponed = "+Drafts"
 set trash = "+Trash"
-set smtp_url = "smtp://smtp.mail.yahoo.com:587/"
+set smtp_url = "smtps://smtp.mail.yahoo.com:465/"
 set signature = '~/.mutt/signatures/yahoo.de'
 
 source 'gpg -d $HOME/.mutt/passwords/yahoo.de.gpg |'
 mailboxes "+=[ Yahoo ]=============="
 mailboxes =INBOX
+
+
