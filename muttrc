@@ -325,6 +325,7 @@ bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CU sidebar-open
 
+set smtp_authenticators = 'gssapi:login'
 
 
 folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'
