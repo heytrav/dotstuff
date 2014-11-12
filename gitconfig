@@ -45,4 +45,6 @@
 [github]
 	user = heytrav
 [diff]
-	tool = vimdiff
+	tool = vimdiff3
+[merge]
+	tool = vimdiff3
