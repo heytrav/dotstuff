@@ -1,7 +1,7 @@
 dotstuff
 ========
 
-some useful files with a dot front
+some useful files with a dot in front
 
 
 Description
