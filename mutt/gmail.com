@@ -16,7 +16,7 @@ mailboxes =INBOX  =[Gmail]/All\ Mail =[Google\ Mail]/Important
 mailboxes "+____ Personal _______________"
 mailboxes =Friends  =family/oregon =family/texas
 mailboxes "+____ Tech ___________________"
-mailboxes =tech/python  =tech/github =tech/cpan =groups/perl/catalyst =groups/perl/dbix
+mailboxes =tech/python  =tech/github =tech/cpan =groups/perl/catalyst =groups/perl/dbix =tech/equifoss
 mailboxes "+____ Interest _______________"
 mailboxes =Homebrewing =Mac
 mailboxes "+____ Finances _______________"
