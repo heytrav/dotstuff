@@ -313,7 +313,7 @@ set wrap_headers = '78'
 # set write_bcc = yes
 # set write_inc = '10'
 set sidebar_visible = yes
-set sidebar_width = 30
+set sidebar_width = 35
 #set sidebar_newmail_only=yes
 color sidebar_new cyan default
 source $HOME/.mutt/gpg.rc
