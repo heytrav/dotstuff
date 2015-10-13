@@ -8,7 +8,7 @@ set record = "+[Gmail].Sent Mail"
 #set postponed ="+[Gmail]/Drafts"
 set postponed ="+[Gmail].Drafts"
 #set trash = "+[Gmail]/Trash"
-set trash = "+[Gmail].Trash"
+#set trash = "+[Gmail].Trash"
 #set smtp_url = "smtps://travis\@ideegeo.com@smtp.gmail.com:465/"
 set signature = '~/.mutt/signatures/ideegeo.com'
 
