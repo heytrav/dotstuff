@@ -1,0 +1,10 @@
+tmux has-session -t development
+if [ $? != 0 ]
+    then
+        tmux new-session -s development -n development -d
+        tmux send-keys -t development 'perl ~/.irssi/scripts/adv_windowlist.pl' C-m
+        tmux split-window -h -p 85  -t development
+        tmux send-keys -t development 'irssi' C-m
+        tmux attach -t development
+fi
+tmux attach -t development
