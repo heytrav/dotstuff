@@ -329,16 +329,12 @@ set smtp_authenticators = 'gssapi:login'
 
 
 folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'
-folder-hook 'ideegeo.com' 'source ~/.mutt/ideegeo.com'
-folder-hook 'goingmyway.co.nz' 'source ~/.mutt/goingmyway.co.nz'
 folder-hook 'yahoo.de' 'source ~/.mutt/yahoo.de'
 
 source ~/.mutt/ideegeo.com
 
-macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/ideegeo.com<enter><change-folder>!<enter>'
-macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
-macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/goingmyway.co.nz<enter><change-folder>!<enter>'
-macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/yahoo.de<enter><change-folder>!<enter>'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/yahoo.de<enter><change-folder>!<enter>'
 
 
 
