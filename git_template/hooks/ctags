@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+#PATH="/usr/local/bin:$PATH"
+trap "rm -f $GIT_DIR/tags.$$" EXIT
+/usr/local/bin/ctags --sort=yes --tag-relative -Rf$GIT_DIR/tags.$$ --exclude=$GIT_DIR --languages=-javascript,sql
+mv $GIT_DIR/tags.$$ $GIT_DIR/tags

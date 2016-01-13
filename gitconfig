@@ -1,7 +1,7 @@
 [user]
     name = Travis Holton
-    email = travis@ideegeo.com
-    signingkey = 9BE26639
+    email = travis@catalyst.net.nz
+    signingkey = E8603BF9
 [alias]
     co = checkout
     br = branch
