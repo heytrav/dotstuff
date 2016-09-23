@@ -102,6 +102,28 @@ sub filewrite {
 			print CLIENTCRAP "Error: cannot close $fnfile: $!";
 		}
 	}
+    my $hilight_match = qr{
+        (?<room>(?:(?! \s\<). )*)
+           \s\< (?:\s+\=\s+)?
+        (?<name>[^\>]+)
+        \>\s
+        (?<message>.*)
+        }x;
+    my $pm_match = qr{
+        (?<person>[^\s]+)
+        \s
+        (?<message>.*)
+        }x;
+    if ( $text =~ $hilight_match ) {
+        qx/growlnotify -n "$+{room}" -t "$+{name}" -m "$+{message}"/;
+        #$message =~ s/([;<>\*\|`&\$!#\(\)\[\]\{\}:'"])/\\$1/g;
+        #qx/notify-send -t 5000 "${room}:${name}" "${message}"/;
+    }
+    elsif ( $text =~ $pm_match ) {
+        qx/growlnotify -n "$+{person}" -m "$+{message}"/;
+        #$message =~ s/([;<>\*\|`&\$!#\(\)\[\]\{\}:'"])/\\$1/g;
+        #qx/notify-send -t 5000 "${person}" "${message}"/;
+    }
 }
 
 #
