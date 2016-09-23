@@ -115,12 +115,16 @@ sub filewrite {
         (?<message>.*)
         }x;
     if ( $text =~ $hilight_match ) {
+        # use growl on mac
         qx/growlnotify -n "$+{room}" -t "$+{name}" -m "$+{message}"/;
+        # use this for linux
         #$message =~ s/([;<>\*\|`&\$!#\(\)\[\]\{\}:'"])/\\$1/g;
         #qx/notify-send -t 5000 "${room}:${name}" "${message}"/;
     }
     elsif ( $text =~ $pm_match ) {
+        # use growl on mac
         qx/growlnotify -n "$+{person}" -m "$+{message}"/;
+        # use this for linux
         #$message =~ s/([;<>\*\|`&\$!#\(\)\[\]\{\}:'"])/\\$1/g;
         #qx/notify-send -t 5000 "${person}" "${message}"/;
     }
