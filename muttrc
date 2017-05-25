@@ -342,5 +342,5 @@ macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/catalyst.net.nz<en
 
 
 # Colors
-source /Users/travis/repos/solarized/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
+source $HOME/repos/solarized/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
 auto_view text/html
