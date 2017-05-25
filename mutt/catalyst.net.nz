@@ -11,12 +11,20 @@ set signature = '~/.mutt/signatures/catalyst.net.nz'
 source 'gpg -d $HOME/.mutt/passwords/catalyst.net.nz.gpg |'
 
 mailboxes "+=[ Catalyst ]==========================+"
-mailboxes =INBOX  =INBOX.Catalyst.general =INBOX.wrms.general
+mailboxes =INBOX  =INBOX.Catalyst.general
 mailboxes "+____ FFX Project  _____________________+"
-mailboxes =INBOX.stuff.jira =INBOX.stuff.gitlab =INBOX.stuff.gitlab-test =INBOX.stuff.team =INBOX.stuff.gerrit 
-mailboxes "+____ Monitoring _______________________+"
-mailboxes =INBOX.drs.api =INBOX.drs.nodepp =INBOX.drs.celery =INBOX.stuff.sentry.adfliction.production =INBOX.sentry.general
+mailboxes =INBOX.stuff.jira  =INBOX.stuff.team 
+mailboxes "+____ FFX GitLab Gerrit ________________+"
+mailboxes =INBOX.stuff.gitlab.discussion =INBOX.stuff.gitlab.test =INBOX.stuff.gerrit
+mailboxes "+____ DRS ______________________________+"
+mailboxes =INBOX.drs.api =INBOX.drs.nodepp =INBOX.drs.celery
+mailboxes "+____ Stuff Monitoring _________________+"
+mailboxes =INBOX.stuff.sentry.adfliction.production 
 mailboxes =INBOX.stuff.monitoring.nagios.prod =INBOX.stuff.monitoring.nagios.preprod =INBOX.stuff.monitoring.nagios.testing =INBOX.stuff.monitoring.nagios.otherstuff
 mailboxes "+____ Stuff Misc  ______________________+"
 mailboxes =INBOX.stuff.monitoring.adfliction.prod =INBOX.stuff.monitoring.adfliction.general  =INBOX.stuff.monitoring.adfliction.testing
+mailboxes "+____ Catalyst Misc  ___________________+"
+mailboxes =INBOX.sentry.general
+mailboxes "+____ WRMS  ____________________________+"
+mailboxes  =INBOX.wrms.general
 

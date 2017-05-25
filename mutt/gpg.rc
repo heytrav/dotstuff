@@ -84,5 +84,5 @@ set pgp_list_secring_command="gpg2 --no-verbose --batch --quiet --with-colons --
 set pgp_good_sign="^\\[GNUPG:\\] GOODSIG"
 
 # pattern to verify a decryption occurred
-set pgp_decryption_okay="^\\[GNUPG:\\] DECRYPTION_OKAY"
+#set pgp_decryption_okay="^\\[GNUPG:\\] DECRYPTION_OKAY"
 

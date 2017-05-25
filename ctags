@@ -2,3 +2,10 @@
 --exclude=\*.min.js
 --exclude=\*.gz
 --exclude=\*.tar
+--exclude=*-min.js
+--exclude=*.min.js
+--exclude=*.tar
+--exclude=*.gz
+--exclude=*.zip
+--exclude=*.bin
+--exclude=*node_modules*

@@ -316,7 +316,7 @@ set sidebar_visible = yes
 #set sidebar_shortpath = yes
 set sidebar_width = 40
 #set sidebar_newmail_only=yes
-color sidebar_new yellow default
+color sidebar_new cyan default
 source $HOME/.mutt/gpg.rc
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
