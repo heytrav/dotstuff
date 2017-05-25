@@ -172,7 +172,7 @@ set mail_check = '30'
 # set pgp_replyinline = no
 # set pgp_retainable_sigs = no
 set pgp_show_unusable = no
-set pgp_sign_as = '0x848BAF5B9BE26639'
+set pgp_sign_as = '0x02F2711FE8603BF9'
 # set pgp_sign_command = '(empty)'
 # set pgp_sort_keys = 'address'
 # set pgp_strict_enc = yes
@@ -313,9 +313,10 @@ set wrap_headers = '78'
 # set write_bcc = yes
 # set write_inc = '10'
 set sidebar_visible = yes
-set sidebar_width = 35
+#set sidebar_shortpath = yes
+set sidebar_width = 40
 #set sidebar_newmail_only=yes
-color sidebar_new cyan default
+color sidebar_new yellow default
 source $HOME/.mutt/gpg.rc
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
@@ -328,16 +329,18 @@ bind index,pager \CU sidebar-open
 set smtp_authenticators = 'gssapi:login'
 
 
-folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'
-folder-hook 'yahoo.de' 'source ~/.mutt/yahoo.de'
+#folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'
+#folder-hook 'yahoo.de' 'source ~/.mutt/yahoo.de'
+folder-hook 'catalyst.net.nz' 'source ~/.mutt/catalyst.net.nz'
 
-source ~/.mutt/ideegeo.com
+source ~/.mutt/catalyst.net.nz
 
-macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
-macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/yahoo.de<enter><change-folder>!<enter>'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/catalyst.net.nz<enter><change-folder>!<enter>'
+#macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
+#macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/yahoo.de<enter><change-folder>!<enter>'
 
 
 
 # Colors
-source $MUTT_COLOR_PATH
+source /Users/travis/repos/solarized/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
 auto_view text/html
