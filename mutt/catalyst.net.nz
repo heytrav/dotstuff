@@ -1,9 +1,9 @@
 
 set mbox_type = Maildir
 set from = 'travis@catalyst.net.nz'
-set folder = "imaps://travis\@catalyst.net.nz@imap.catalyst.net.nz:993"
-#set folder = ~/Mail/catalyst
-set use_from
+set folder = "imap://travis@mail.catalyst.net.nz"
+set smtp_url = "smtp://travis@mail.catalyst.net.nz"
+set use_from = yes
 set spoolfile = "+INBOX"
 set postponed ="+INBOX.Drafts"
 set record = "+INBOX.Sent"
@@ -11,20 +11,36 @@ set signature = '~/.mutt/signatures/catalyst.net.nz'
 source 'gpg -d $HOME/.mutt/passwords/catalyst.net.nz.gpg |'
 
 mailboxes "+=[ Catalyst ]==========================+"
-mailboxes =INBOX  =INBOX.Catalyst.general
-mailboxes "+____ FFX Project  _____________________+"
-mailboxes =INBOX.stuff.jira  =INBOX.stuff.team 
-mailboxes "+____ FFX GitLab Gerrit ________________+"
-mailboxes =INBOX.stuff.gitlab.discussion =INBOX.stuff.gitlab.test =INBOX.stuff.gerrit
+mailboxes =INBOX  =INBOX.Catalyst.general =INBOX.Catalyst.whereis =INBOX.Sent =INBOX.Drafts
+mailboxes =INBOX.gitlab
 mailboxes "+____ DRS ______________________________+"
 mailboxes =INBOX.drs.api =INBOX.drs.nodepp =INBOX.drs.celery
-mailboxes "+____ Stuff Monitoring _________________+"
-mailboxes =INBOX.stuff.sentry.adfliction.production 
-mailboxes =INBOX.stuff.monitoring.nagios.prod =INBOX.stuff.monitoring.nagios.preprod =INBOX.stuff.monitoring.nagios.testing =INBOX.stuff.monitoring.nagios.otherstuff
-mailboxes "+____ Stuff Misc  ______________________+"
+mailboxes "+____ Govt Services ____________________+"
+mailboxes =INBOX.govt-services.redmine
+mailboxes =INBOX.govt-services.startsmart =INBOX.govt-services.startsmart.cron =INBOX.govt-services.startsmart.aide-report =INBOX.govt-services.startsmart.dev-alerts =INBOX.govt-services.startsmart.bounces
+mailboxes =INBOX.govt-services.endoflife =INBOX.govt-services.endoflife.cron =INBOX.govt-services.endoflife.aide-report =INBOX.govt-services.endoflife.dev-alerts
+mailboxes =INBOX.govt-services.uat =INBOX.govt-services.uat.cron =INBOX.govt-services.uat.aide-report =INBOX.govt-services.uat.dev-alerts
+mailboxes "+____ FFX Project  _____________________+"
+mailboxes =INBOX.stuff.jira  =INBOX.stuff.team 
+mailboxes "+____ FFX VCS CI _______________________+"
+mailboxes =INBOX.stuff.gitlab.discussion =INBOX.stuff.gitlab.test =INBOX.stuff.gerrit
+mailboxes "+____ FFX Monitoring ___________________+"
+mailboxes =INBOX.stuff.sentry  =INBOX.stuff.sentry.adcollector =INBOX.stuff.sentry.adservices =INBOX.stuff.sentry.adcron =INBOX.stuff.sentry.adcollector =INBOX.stuff.sentry.dt-adcollector =INBOX.stuff.sentry.adfeeds =INBOX.stuff.sentry.adcontrol
+mailboxes =INBOX.stuff.nagios =INBOX.stuff.nagios.adclick =INBOX.stuff.nagios.adclick.prod  =INBOX.stuff.nagios.adclick.staging
+mailboxes =INBOX.stuff.nagios =INBOX.stuff.nagios.adfeeds =INBOX.stuff.nagios.adfeeds.prod  =INBOX.stuff.nagios.adfeeds.staging
+mailboxes =INBOX.stuff.nagios =INBOX.stuff.nagios.adservices =INBOX.stuff.nagios.adservices.prod  =INBOX.stuff.nagios.adservices.staging
+mailboxes =INBOX.stuff.nagios.prod =INBOX.stuff.nagios.preprod =INBOX.stuff.nagios.testing =INBOX.stuff.nagios.otherstuff
+mailboxes "+____ FFX Servers ______________________+"
+mailboxes =INBOX.stuff.nativform.adclick =INBOX.stuff.nativform.adclick.prod =INBOX.stuff.nativform.adclick.staging
+mailboxes =INBOX.stuff.nativform.adcontrol =INBOX.stuff.nativform.adcontrol.prod =INBOX.stuff.nativform.adcontrol.staging
+mailboxes =INBOX.stuff.nativform.adservices =INBOX.stuff.nativform.adservices.prod =INBOX.stuff.nativform.adservices.staging
+mailboxes =INBOX.stuff.nativform.adfeeds =INBOX.stuff.nativform.adfeeds.prod =INBOX.stuff.nativform.adfeeds.staging
+mailboxes "+____ FFX Misc  ________________________+"
 mailboxes =INBOX.stuff.monitoring.adfliction.prod =INBOX.stuff.monitoring.adfliction.general  =INBOX.stuff.monitoring.adfliction.testing
+mailboxes =INBOX.stuff.monitoring.houseoftravel =INBOX.stuff.monitoring.otherstuff
+mailboxes =INBOX.stuff.monitoring.stuff =INBOX.stuff.monitoring.stuff.prod =INBOX.stuff.monitoring.stuff.preprod =INBOX.stuff.monitoring.stuff.testing =INBOX.stuff.m4g 
+mailboxes =INBOX.stuff.monitoring.cq =INBOX.stuff.monitoring.cq.prod =INBOX.stuff.monitoring.cq.preprod =INBOX.stuff.monitoring.cq.testing
 mailboxes "+____ Catalyst Misc  ___________________+"
 mailboxes =INBOX.sentry.general
 mailboxes "+____ WRMS  ____________________________+"
 mailboxes  =INBOX.wrms.general
-
