@@ -15,7 +15,7 @@ mailboxes =INBOX.gitlab
 mailboxes "+____ DRS ______________________________+"
 mailboxes =INBOX.drs.api =INBOX.drs.nodepp =INBOX.drs.celery
 mailboxes "+____ Govt Services ____________________+"
-mailboxes =INBOX.govt-services.redmine
+mailboxes =INBOX.govt-services.redmine =INBOX.govt-services.gitlab
 mailboxes =INBOX.govt-services.startsmart =INBOX.govt-services.startsmart.cron =INBOX.govt-services.startsmart.aide-report =INBOX.govt-services.startsmart.dev-alerts =INBOX.govt-services.startsmart.bounces
 mailboxes =INBOX.govt-services.endoflife =INBOX.govt-services.endoflife.cron =INBOX.govt-services.endoflife.aide-report =INBOX.govt-services.endoflife.dev-alerts
 mailboxes =INBOX.govt-services.uat =INBOX.govt-services.uat.cron =INBOX.govt-services.uat.aide-report =INBOX.govt-services.uat.dev-alerts
