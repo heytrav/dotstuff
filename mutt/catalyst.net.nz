@@ -2,7 +2,6 @@ set mbox_type = Maildir
 set from = 'travis@catalyst.net.nz'
 set folder = "imap://travis@mail.catalyst.net.nz"
 set smtp_url = "smtp://travis@mail.catalyst.net.nz"
-#set folder = ~/Mail/catalyst
 set use_from
 set spoolfile = "+INBOX"
 set postponed ="+INBOX.Drafts"
@@ -12,9 +11,11 @@ source 'gpg -d $HOME/.mutt/passwords/catalyst.net.nz.gpg |'
 
 mailboxes "+=[ Catalyst ]==========================+"
 mailboxes =INBOX  =INBOX.Catalyst.general =INBOX.Catalyst.whereis =INBOX.Sent =INBOX.Drafts
+mailboxes =INBOX.gitlab
 mailboxes "+____ DRS ______________________________+"
 mailboxes =INBOX.drs.api =INBOX.drs.nodepp =INBOX.drs.celery
 mailboxes "+____ Govt Services ____________________+"
+mailboxes =INBOX.govt-services.redmine
 mailboxes =INBOX.govt-services.startsmart =INBOX.govt-services.startsmart.cron =INBOX.govt-services.startsmart.aide-report =INBOX.govt-services.startsmart.dev-alerts =INBOX.govt-services.startsmart.bounces
 mailboxes =INBOX.govt-services.endoflife =INBOX.govt-services.endoflife.cron =INBOX.govt-services.endoflife.aide-report =INBOX.govt-services.endoflife.dev-alerts
 mailboxes =INBOX.govt-services.uat =INBOX.govt-services.uat.cron =INBOX.govt-services.uat.aide-report =INBOX.govt-services.uat.dev-alerts
@@ -42,4 +43,3 @@ mailboxes "+____ Catalyst Misc  ___________________+"
 mailboxes =INBOX.sentry.general
 mailboxes "+____ WRMS  ____________________________+"
 mailboxes  =INBOX.wrms.general
-

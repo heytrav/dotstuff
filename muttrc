@@ -274,7 +274,7 @@ set pgp_sign_as = '0x02F2711FE8603BF9'
 # set ssl_client_cert = '(empty)'
 # set ssl_force_tls = no
 # set ssl_min_dh_prime_bits = '0'
-# set ssl_starttls = yes
+ set ssl_starttls = yes
 # set ssl_use_sslv2 = no
 # set ssl_use_sslv3 = yes
 # set ssl_use_tlsv1 = yes
@@ -313,6 +313,7 @@ set wrap_headers = '78'
 # set write_bcc = yes
 # set write_inc = '10'
 set sidebar_visible = yes
+#set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%?S?%S? %n"
 #set sidebar_shortpath = yes
 set sidebar_width = 40
 #set sidebar_newmail_only=yes
@@ -326,7 +327,7 @@ bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CU sidebar-open
 
-set smtp_authenticators = 'gssapi:login'
+#set smtp_authenticators = 'gssapi:login'
 
 
 #folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'

@@ -48,3 +48,5 @@
 	tool = vimdiff
 [merge]
 	tool = vimdiff
+[diff "ansible-vault"]
+	textconv = ansible-vault view
