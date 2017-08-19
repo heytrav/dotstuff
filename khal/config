@@ -3,7 +3,7 @@
 [[catalyst]]
 path = ~/.calendars/calendar
 type = discover
-color = dark red
+color = light red
 
 [locale]
 timeformat = %H:%M
