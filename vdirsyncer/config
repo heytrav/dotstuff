@@ -19,6 +19,8 @@ fileext = ".ics"
 
 [storage catalyst_remote]
 type = "caldav"
-url = "https://calendar.catalyst.net.nz/caldav.php/travis/calendar"
+url = "https://calendar.catalyst.net.nz/caldav.php"
+verify = false
+verify_fingerprint = "E6:29:8F:25:D8:E1:BB:78:24:FB:E3:D7:9D:5A:18:86:B3:5F:D9:8A"
 username = "travis"
 password.fetch = ["prompt", "Password for Caldav"] 
