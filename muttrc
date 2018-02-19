@@ -201,7 +201,7 @@ set pgp_sign_as = '0x02F2711FE8603BF9'
 # set print_decode = yes
 # set print_split = no
 # set prompt_after = yes
- set query_command = "goobook query '%s'" 
+ set query_command = "khard email --parsable %s" 
  #macro index,pager A "<pipe-message>abook --add-email-quiet<return>" "add the sender address to abook"
  #set query_format = '%4c %t %-25.25a %-25.25n %?e?(%e)?'
 # set quit = yes
@@ -318,7 +318,8 @@ set sidebar_visible = yes
 set sidebar_width = 40
 #set sidebar_newmail_only=yes
 color sidebar_new cyan default
-source $HOME/.mutt/gpg.rc
+#source $HOME/.mutt/gpg.rc
+source /usr/share/doc/mutt/examples/gpg.rc 
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
 # Ctrl-n, Ctrl-p to select next, previous folder.
@@ -327,20 +328,19 @@ bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CU sidebar-open
 
-#set smtp_authenticators = 'gssapi:login'
+
+bind editor <Tab> complete-query
+bind editor ^T    complete
 
 
-#folder-hook 'gmail.com' 'source ~/.mutt/gmail.com'
-#folder-hook 'yahoo.de' 'source ~/.mutt/yahoo.de'
 folder-hook 'catalyst.net.nz' 'source ~/.mutt/catalyst.net.nz'
 
 source ~/.mutt/catalyst.net.nz
 
 macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/catalyst.net.nz<enter><change-folder>!<enter>'
-#macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/gmail.com<enter><change-folder>!<enter>'
-#macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/yahoo.de<enter><change-folder>!<enter>'
 
 
+macro index,pager A  "<pipe-message>khard add-email -a private <return>"  "add the sender email address to khard"
 
 # Colors
 source $HOME/repos/solarized/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
